@@ -45,10 +45,10 @@ setup(
 
     packages=find_packages(),
 
-    python_requires='>=3.5',
+    python_requires='>=3.7',
     install_requires=[
         'aiojsonrpc2==1.0.0',
-        'PyYAML==3.12',
+        'PyYAML==6.0.1',
     ],
 
     entry_points = {

@@ -58,7 +58,7 @@ class Application(object):
     async def startup(self):
         try:
             with open(self.config_file, 'r') as cf:
-                self.config = yaml.load(cf.read())
+                self.config = yaml.safe_load(cf.read())
         except Exception:
             raise ConfigurationError("Unable to load configuration file")
 
